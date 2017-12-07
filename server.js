@@ -65,7 +65,9 @@ app.get('/bad',(req,res) => {
 })
 
 app.get('/portfolio',(req,res) => {
-    res.render('portfolio.hbs');
+    res.render('portfolio.hbs',{
+        pageTitle: 'Portfolio Page'
+    });
 })
 
 app.listen(port, () => {
